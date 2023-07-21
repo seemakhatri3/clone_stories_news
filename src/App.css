@@ -1,38 +1,64 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color: rgb(red, green, blue);
+}
+h1{
+  font-size: 3.2rem;
+  margin: 2rem 0;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  font-family:sans-serif;
+  font-size: 2.4rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p{
+  margin: 2rem 0;
+  color: rgba(21,19,60,0.5);
+  font-weight: 400;
+  font-size: 1.6rem;
+  display: inline-block;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+span{
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.stories-div{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+.card{
+  min-width: 20rem;
+  width: 40rem;
+  padding: 4rem;
+  background-color: #ffffff;
+  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+  border-radius: 0.5rem;
+  color: #15133c;
+
+}
+.card-button{
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+> a{
+color: black;
+font-weight: 400;
+font-size: 1.6rem;
+}
+>a:last-child{
+  color: red;
+}
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
